@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 9.0.0 (2025-07-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgraded to mongoose 7 and removed node 12 support
+* mongodb driver update requires server port to be specified
+* drop support for node 4 and 5
+
+### Features
+
+* add basic type definitions ([#354](https://github.com/hyperdxio/passport-local-mongoose/issues/354)) ([92849db](https://github.com/hyperdxio/passport-local-mongoose/commit/92849db3329efd1f10af52a16f8b020e657e1b98)), closes [#335](https://github.com/hyperdxio/passport-local-mongoose/issues/335)
+* escape username regex ([#296](https://github.com/hyperdxio/passport-local-mongoose/issues/296)) ([6713c4e](https://github.com/hyperdxio/passport-local-mongoose/commit/6713c4e02c9a2aabbe3cd4a9c2efc032e686eb3d))
+* implement promises for authenticate and static authenticate including tests ([6752e0c](https://github.com/hyperdxio/passport-local-mongoose/commit/6752e0ca861818ef1138e32cd4a8bd1d117aa0f0))
+* promisify external functions not part of passport.js interface ([e687753](https://github.com/hyperdxio/passport-local-mongoose/commit/e687753dec950687d66558cabdb15438778568fa))
+* remove babel and semver checks for crypto parameters ([857f93a](https://github.com/hyperdxio/passport-local-mongoose/commit/857f93aabd3ee392aefe3dfb005ac4d88b1252d4))
+* reset maxAttempts after unlockInterval if activated ([#349](https://github.com/hyperdxio/passport-local-mongoose/issues/349)) ([a752854](https://github.com/hyperdxio/passport-local-mongoose/commit/a752854ce66220bff9e4c09f9b3713fafb9a0f2f))
+* upgrade dependencies and drop support of legacy mongodb and node versions ([#344](https://github.com/hyperdxio/passport-local-mongoose/issues/344)) ([2d88e70](https://github.com/hyperdxio/passport-local-mongoose/commit/2d88e70c9afcbddd46076cde46e34111e6ab029d))
+* upgrade to mongoose 7 ([#370](https://github.com/hyperdxio/passport-local-mongoose/issues/370)) ([a397c00](https://github.com/hyperdxio/passport-local-mongoose/commit/a397c00330494563c8141bb6e1334b83d6aa16c7))
+
+
+### Bug Fixes
+
+* add back passwordValidatorPromisified ([4794266](https://github.com/hyperdxio/passport-local-mongoose/commit/4794266440704dc7ff59afb2aa7c608dfa395f01))
+* add usernameCaseInsensitive to the typings ([#355](https://github.com/hyperdxio/passport-local-mongoose/issues/355)) ([26f4991](https://github.com/hyperdxio/passport-local-mongoose/commit/26f49919220db8f489cfe7fd7f6534535ff0c544))
+* codellama.io badge ([0aeabd4](https://github.com/hyperdxio/passport-local-mongoose/commit/0aeabd41e08549e28b1ada6e0850a0e8e8133b13))
+* generateerr strict mode error ([#1](https://github.com/hyperdxio/passport-local-mongoose/issues/1)) ([fc593a6](https://github.com/hyperdxio/passport-local-mongoose/commit/fc593a65001c0faabb2db375c9d8f2bc7c8b246c))
+* make debug a dev dependency ([c9b0a78](https://github.com/hyperdxio/passport-local-mongoose/commit/c9b0a78761c53edfde6850ed997662e001c430e7))
+* promise return signature ([0612b5b](https://github.com/hyperdxio/passport-local-mongoose/commit/0612b5b4414bc73a39c8b844a086dca5ac962c2b))
+* remove superfluous files from package ([b1681a5](https://github.com/hyperdxio/passport-local-mongoose/commit/b1681a5d47ef3dc0d50a60d795c925f6a03e0683))
+* require node engine >= 6.0.0 ([b18f083](https://github.com/hyperdxio/passport-local-mongoose/commit/b18f08385e713d32dd95192eed2b32654a05d7c3))
+* update build matrix ([788e0c9](https://github.com/hyperdxio/passport-local-mongoose/commit/788e0c9bf5021e6bf82a8b3b4dee87884bd03a8d))
+* update dependencies and specify server port in tests ([807d9cf](https://github.com/hyperdxio/passport-local-mongoose/commit/807d9cf669f7a7c433eb0206c97574761c03b8e5))
+* update nyc dev dependency ([74854b1](https://github.com/hyperdxio/passport-local-mongoose/commit/74854b1844f11c4811b9333cc126ab174e793a92))
+* use Buffer.from instead of new Buffer ([37375b8](https://github.com/hyperdxio/passport-local-mongoose/commit/37375b8b5555d82e6e6241fbd053f2f6b8d670d1))
+
 ## [8.0.0](https://github.com/saintedlama/passport-local-mongoose/compare/v7.1.2...v8.0.0) (2023-03-14)
 
 
